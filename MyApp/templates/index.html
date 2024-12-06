@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict_species</title>
+</head>
+<body>
+    <h2>
+        Predict_species
+    </h2>
+<form method="post" action="{% url 'feedback_form' %}" >
+    {% csrf_token %}
+    <label for="area_code">Area Code:</label>
+    <input type="number" name="area_code" required>
+    <br><br>
+    <label for="locality_code">Locality Code:</label>
+    <input type="number" name="locality_code" required>
+    <br><br>
+    <label for="region_code">Region Code:</label>
+    <input type="number" name="region_code" required>
+    <br><br>
+    <label for="height">Height:</label>
+    <input type="number" name="height" required>
+    <br><br>
+    <label for="diameter">Diameter:</label>
+    <input type="number" name="diameter" required>
+    <br><br>
+    <label for="classs">Class:</label>
+    <input type="number" name="classs" required>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
